@@ -1,85 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lexaris – Maison d’édition numérique</title>
   <meta name="description" content="Lexaris – La connaissance libre et accessible pour tous. Maison d’édition numérique bilingue.">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
   <style>
-    body {background-color:#faf8f5;color:#1c1e29;font-family:'Inter',sans-serif;transition:opacity 0.5s ease;}
-    header{text-align:center;background:#1c1e29;color:#faf8f5;padding:3rem 1rem;}
-    header h1{color:#c7a95e;font-family:'Merriweather',serif;}
-    nav ul{align-items:center;}
-    main.container{padding:2rem;}
-    section{margin-bottom:3rem;}
-    footer{text-align:center;padding:2rem;border-top:1px solid #ddd;color:#555;}
-    .fade-enter{opacity:0;} .fade-enter-active{opacity:1;transition:opacity 0.5s;}
-    img.banner{width:100%;border-radius:8px;margin-bottom:2rem;}
+    body {
+      background-color:#faf8f5;
+      color:#1c1e29;
+      font-family:'Inter',sans-serif;
+    }
+    header {
+      background:linear-gradient(to bottom,#1c1e29,#2c2f3b);
+      color:#faf8f5;
+      text-align:center;
+      padding:3rem 1rem;
+    }
+    header h1 {
+      color:#C7A95E;
+      font-family:'Merriweather',serif;
+      margin-bottom:0.5rem;
+    }
+    nav ul {align-items:center;}
+    main.container {padding:2rem;}
+    section {margin-bottom:3rem;}
+    footer {
+      text-align:center;
+      padding:2rem 0;
+      border-top:1px solid #ddd;
+      color:#555;
+    }
+    img.banner {
+      width:100%;
+      border-radius:8px;
+      margin-bottom:2rem;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    }
   </style>
 </head>
 <body>
   <nav class="container-fluid">
     <ul><li><strong>Lexaris</strong></li></ul>
     <ul>
-      <li><a href="#accueil">Accueil</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#publier">Publier</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#auteurs">Auteurs</a></li>
-      <li><a href="#apropos">À propos</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="publier.html">Publier</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="auteurs.html">Auteurs</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <header id="accueil">
+  <header>
     <h1>Lexaris</h1>
     <p>La connaissance libre et accessible pour tous</p>
   </header>
 
   <main class="container">
-    <section id="publications">
-      <h2>📚 Publications / Publications</h2>
-      <p>Découvrez nos livres, articles et analyses publiés sur Lexaris. / Explore our published books, articles, and essays.</p>
-    </section>
-
-    <section id="publier">
-      <h2>🖋️ Publier / Publish</h2>
-      <p>Soumettez vos travaux académiques ou littéraires pour diffusion sur Lexaris. / Submit your academic or literary works for publication on Lexaris.</p>
-    </section>
-
-    <section id="blog">
-      <h2>📰 Blog</h2>
-      <p>Actualités, réflexions et débats autour de la connaissance. / News, reflections and discussions about knowledge.</p>
-    </section>
-
-    <section id="auteurs">
-      <h2>👥 Auteurs / Authors</h2>
-      <p>Rencontrez les contributeurs et auteurs de Lexaris. / Meet the contributors and authors of Lexaris.</p>
-    </section>
-
-    <section id="apropos">
-      <h2>ℹ️ À propos / About</h2>
-      <p>Lexaris est une maison d’édition numérique gratuite dédiée à la diffusion du savoir et à la valorisation des travaux intellectuels. / Lexaris is a free digital publishing platform dedicated to spreading knowledge and promoting intellectual works.</p>
-    </section>
-
-    <section id="contact">
-      <h2>✉️ Contact</h2>
-      <p>Écrivez-nous à <strong>contact@lexaris.org</strong> / Write to us at <strong>contact@lexaris.org</strong></p>
+    <img class="banner" src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=1600&q=80" alt="Livres et lumière du savoir">
+    <section>
+      <h2>Bienvenue sur Lexaris</h2>
+      <p>
+        Lexaris est une plateforme numérique gratuite dédiée à la lecture, à la diffusion et à la valorisation des travaux intellectuels dans tous les domaines du savoir.
+        Nous permettons aux chercheurs, étudiants, professionnels et auteurs indépendants de publier leurs articles, mémoires, ouvrages et analyses en toute simplicité.
+      </p>
+      <p>
+        Notre objectif est de rendre la connaissance accessible, visible et disponible pour tous, en particulier en RDC et dans la région africaine.
+      </p>
+      <a href="publications.html" role="button">Explorer les publications</a>
     </section>
   </main>
 
   <footer>
-    © 2025 <strong>Lexaris</strong> — Une initiative de Hippolyte Ngondo Shako
+    © 2025 <strong>Lexaris</strong> – une initiative de Hippolyte Ngondo Shako
   </footer>
-
-  <script>
-    document.querySelectorAll('nav a').forEach(link=>{
-      link.addEventListener('click',e=>{
-        e.preventDefault();
-        document.querySelector(link.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-      });
-    });
-  </script>
 </body>
 </html>
